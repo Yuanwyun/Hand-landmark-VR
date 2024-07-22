@@ -72,8 +72,8 @@ class CameraAR(mglw.WindowConfig):
         self.withTexture = self.prog3d['withTexture']
 
         # Load the 3D virtual object, and the marker for hand landmarks
-        self.scene_cube = self.load_scene('/Users/yuanweiyun/Desktop/VR/data/crate.obj')
-        self.scene_marker = self.load_scene('/Users/yuanweiyun/Desktop/VR/data/marker.obj')
+        self.scene_cube = self.load_scene('/Users/Desktop/VR/data/crate.obj')
+        self.scene_marker = self.load_scene('/Users/Desktop/VR/data/marker.obj')
 
         # Extract the VAOs from the scene
         self.vao_cube = self.scene_cube.root_nodes[0].mesh.vao.instance(self.prog3d)
